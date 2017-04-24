@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>特定属性选择器</title>
+    <style>
+        [title|='pa']{
+            color: white;
+            background-color: black;
+        }
+        [title^='pa']{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+<p title="pa-ragraph paragraph1">
+    这里是段落1
+</p>
+<p title="paragraph paragraph2">
+    这里是段落2
+</p>
+<p>
+    注：特定属性选择器（|=）的选择范围仅限于中间有连字符的属性，所以一般用来选择语言<br>
+    该选择器的选择范围属于（^=），即后者的选择范围更大一些。
+</p>
+</body>
+</html>

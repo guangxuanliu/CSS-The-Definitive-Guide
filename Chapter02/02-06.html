@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>根据部分属性值选择</title>
+    <style>
+        p[class*='cloud']{
+            font-style: italic;
+        }
+        p[class^='bar']{
+            background-color: silver;
+        }
+        p[class$='y']{
+            font-weight:bold;
+        }
+        [href*='jiaoyinkeji']{
+            font-weight:bold;
+            text-decoration: none;
+            color: #12a4b4;
+        }
+    </style>
+</head>
+<body>
+<p class="barren rocky">Mercury</p>
+<p class="cloudy barren">Venus</p>
+<p class="life-bearing cloudy">Earth</p>
+<p>
+    <a href="http://www.google.com">Google</a>
+</p><p>
+    <a href="http://www.jiaoyinkeji.com">jiaoyinkeji</a>
+</p><p>
+    <a href="http://www.baidu.com">Baidu</a>
+</p>
+<p>
+    注：属性选择器可以不配合标签使用，如直接[href*='jiaoyinkeji']
+</p>
+</body>
+</html>

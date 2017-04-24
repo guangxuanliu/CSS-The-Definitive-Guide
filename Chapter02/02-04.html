@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>根据具体属性值选择</title>
+    <style>
+        .para1{
+            color: purple;
+        }
+        p[class='para1']{
+            background-color: black;
+        }
+        p[class='here para1']{
+            background-color: yellow;
+        }
+        p[class='para1 here']{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<p class="para1 here">
+    这里是段落
+</p>
+<p>
+    注意：类选择器和指定类属性的属性选择器不同。<br>
+    同样的道理，ID选择器和指定ID属性的属性选择器不同
+    #someId !== elem[id='someId']
+</p>
+</body>
+</html>

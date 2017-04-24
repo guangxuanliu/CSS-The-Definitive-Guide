@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器--简单属性选择</title>
+    <style>
+        h1[class]{
+            color: white;
+            background-color: purple;
+        }
+        p[class]{
+            color: yellow;
+        }
+        p[class][title]{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<h1 class="">属性选择器--简单属性选择</h1>
+<h1>属性选择器--简单属性选择</h1>
+
+<p class="para1" title="">属性选择器可以链接在一起</p>
+<p class="para1">属性选择器可以链接在一起</p>
+</body>
+</html>

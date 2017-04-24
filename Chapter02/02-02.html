@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ID选择器</title>
+    <style>
+        #par1{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<h1>
+    设定多个元素为同一ID试试看样式和脚本
+</h1>
+<p id="par1">这是段落一</p>
+<p id="par1">这是段落二</p>
+
+<p>
+    由此可见浏览器并不会检测ID的唯一性，但是一些IDE会检测（比如我用的WebStorm），而且样式都能应用上，但是脚本只能选中第一个为此id的元素。
+</p>
+
+<script>
+    var elem = document.getElementById('par1');
+    console.log(elem);
+</script>
+</body>
+</html>
