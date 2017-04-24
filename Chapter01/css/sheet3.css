@@ -2,3 +2,7 @@ body{
     text-align: center;
     background-color: blue;
 }
+/*这里是CSS的注释部分*/
+h1{
+    color: #000;
+}
