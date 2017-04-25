@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>特殊性</title>
+    <style>
+        h1{
+            background-color: red;
+        }
+        h1:first-line{
+            background-color: green;
+        }
+        .special{
+            background-color: blue;
+        }
+        h1.special{
+            background-color: #ff01ff;
+        }
+        #special{
+            background-color: purple;
+        }
+        h1#special{
+            background-color: #666666;
+        }
+
+    </style>
+</head>
+<body>
+<h1 class="special" id="special" style="background-color: brown">特殊性</h1>
+
+<p>
+    注意：特殊性0，0，0，0<br>
+    <ol>
+    <li>内敛样式</li>
+    <li>ID选择器</li>
+    <li>类，伪类，属性选择器</li>
+    <li>元素选择器，伪元素选择器</li>
+</ol>
+<p>
+    伪类包括：link,visited,hover,active,focus。
+</p>
+<p>
+    伪元素包括：first-letter,first-line,before,after
+</p>
+</p>
+</body>
+</html>

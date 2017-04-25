@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>继承的值无特殊性</title>
+    <style>
+        *{
+            color: grey;
+        }
+        h1#page-title{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<h1 id="page-title">My name is <em>Liu Guangxuan</em></h1>
+<p>across the GFW,</p>
+<div>
+    注意：此处h1中的em继承自h1，因为继承的值无特殊性，又因为通配符'*'选中了所有的元素，特殊性为0，根据规则，0特殊性大于无特殊性，所以em元素的值为灰色
+</div>
+</body>
+</html>
