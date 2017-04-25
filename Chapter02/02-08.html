@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择相邻兄弟元素</title>
+    <style>
+        h1 + p {
+            background-color: #12a4b4;
+            color: white;
+        }
+        li + li {
+            background-color: #12a4b4;
+        }
+        ul + ol {
+            border: 1px solid #666;
+        }
+    </style>
+</head>
+<body>
+<h1>
+    选择相邻兄弟元素
+</h1>
+<p>这里是一个段落</p>
+<ul>
+    <li>无序列表</li>
+    <li>无序列表</li>
+    <li>无序列表</li>
+</ul>
+这里没有任何元素包裹，所以用兄弟选择器(ul + ol)仍然能选中ol
+<ol>
+    <li>有序列表</li>
+    <li>有序列表</li>
+    <li>有序列表</li>
+</ol>
+</body>
+</html>

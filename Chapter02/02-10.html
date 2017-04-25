@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择第一个子元素</title>
+    <style>
+        li + li{
+            background-color: yellow;
+        }
+        li:first-child{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>这是一个列表项</li>
+    <li>这是一个列表项</li>
+    <li>这是一个列表项</li>
+</ul>
+<ol>
+    <li>这是一个有序列表</li>
+    <li>这是一个有序列表</li>
+    <li>这是一个有序列表</li>
+</ol>
+<p>注意：first-child选择的是什么元素！</p>
+</body>
+</html>
