@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>斜体</title>
+    <style>
+        .normal{
+            font-style: normal;
+        }
+        .italic{
+            font-style: italic;
+        }
+        .oblique{
+            font-style: oblique;
+        }
+    </style>
+</head>
+<body>
+<h1 class="normal">
+    italic and oblique test
+</h1>
+<h1 class="italic">
+    italic and oblique test
+</h1>
+<h1 class="oblique">
+    italic and oblique test
+</h1>
+<p>
+    注意：font-style属性可以选择italic和oblique等，italic会选择该字体族的italic，oblique会选择该字体族的oblique字体，若字体族没有提供italic字体，则选择oblique字体。<br>
+    若没有提供oblique字体，则根据normal字体计算出倾斜的字体。<br>
+    简单说italic是italic字体，oblique是倾斜的字体。
+</p>
+</body>
+</html>
