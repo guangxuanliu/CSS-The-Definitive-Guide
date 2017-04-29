@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本缩进</title>
+    <style>
+        p{
+            text-indent: 2em;
+        }
+        .percentage{
+            text-indent: 10%;
+        }
+        .outer{
+            text-indent: 40px;
+        }
+        .inner{
+            text-indent:10%;
+        }
+    </style>
+</head>
+<body>
+<p>测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进</p>
+<p>Test text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indentTest text indent     </p>
+<p class="percentage">测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进测试文本缩进</p>
+<div class="outer">
+    这里是外层DIV，缩进40px.
+    <div class="inner">
+        这里是内层DIV，缩进10%
+        <div class="para">
+            这里是最内层DIV元素，据说缩进可以继承。
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>行高</title>
+    <style>
+        body{
+            line-height: 14px;
+            font-size: 13px;
+        }
+        .cl1{
+            line-height: 1.5em;
+        }
+        .cl2{
+            font-size: 12px;
+            line-height:150%;
+        }
+        .cl3{
+            line-height: 1in;
+        }
+    </style>
+</head>
+<body>
+<p>这个段落继承默认的line-height和默认的font-size属性</p>
+<p class="cl1">这个段落的line-height的值为19.5px</p>
+<p class="cl2">这个段落的line-height的值为18px</p>
+<p class="cl3">这个段落的line-height的值为96px</p>
+
+<p>
+    注意：
+    <ul>
+    <li>中文文本默认最小的字体大小为12px</li>
+    <li>我的电脑的ppi为96，所以1英寸为96像素</li>
+</ul>
+</p>
+</body>
+</html>
