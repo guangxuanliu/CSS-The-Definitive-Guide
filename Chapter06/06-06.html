@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>处理空白符</title>
+    <style>
+        .normal{
+            white-space:normal;
+        }
+        .pre{
+            white-space:pre;
+        }
+        .nowrap{
+            white-space:nowrap;
+        }
+        .pre-wrap{
+            white-space:pre-wrap;
+        }
+        table{
+            border:1px solid #666666;
+        }
+        table td{
+            border: 1px solid #666666;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<p class="normal">
+    This     is     a     test of       paragraph
+    has    many   spaces in   it.
+ </p>
+<p class="pre">
+    This     is     a     test of       paragraph
+    has    many   spaces in   it.
+ </p>
+<p class="nowrap">
+    This     is     a     test of       paragraph
+    has    many   spaces in   it.This     is     a     test of       paragraph
+    has    many   spaces in   it.This     is     a     test of       paragraph
+    has    many   spaces in   it.This     is     a     test of       paragraph
+    has    many   spaces in   it.This     is     a     test of       paragraph
+    has    many   spaces in   it.This     is     a     test of       paragraph
+    has    many   spaces in   it.This     is     a     test of       paragraph
+    has    many   spaces in   it.This     is     a     test of       paragraph
+    has    many   spaces in   it.This     is     a     test of       paragraph
+    has    many   spaces in   it.This     is     a     test of       paragraph
+    has    many   spaces in   it.This     is     a     test of       paragraph
+    has    many   spaces in   it.This     is     a     test of       paragraph
+    has    many   spaces in   it.
+ </p>
+<p class="pre-wrap">
+    This     is     a     test of       paragraph
+    has    many   spaces in   it.
+</p>
+
+<table>
+    <thead>
+    <tr>
+        <td></td><td>空白符</td><td>换行符</td><td>自动换行</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>normal</td><td>合并</td><td>忽略</td><td>允许</td>
+    </tr>
+    <tr>
+        <td>nowrap</td><td>合并</td><td>忽略</td><td>不允许</td>
+    </tr>
+    <tr>
+        <td>pre</td><td>保留</td><td>保留</td><td>不允许</td>
+    </tr>
+    <tr>
+        <td>pre-wrap</td><td>保留</td><td>保留</td><td>允许</td>
+    </tr>
+    <tr>
+        <td>pre-line</td><td>合并</td><td>保留</td><td>允许</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
