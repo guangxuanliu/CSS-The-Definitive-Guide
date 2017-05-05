@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动规则一</title>
+    <style>
+        .parent{
+            width:500px;
+            height: 500px;
+            background-color: red;
+            padding: 30px;
+        }
+        .child1{
+            width:200px;
+            height: 200px;
+            float: left;
+            background-color: green;
+            margin: 10px;
+        }
+        .child2{
+            width:200px;
+            height: 200px;
+            float: right;
+            background-color: blue;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<p>
+    浮动元素的左（或右）外边界不能超过其包含块的左（或右）内边界。
+</p>
+<div class="parent">
+    <div class="child1">
+    </div>
+    <div class="child2">
+    </div>
+</div>
+</body>
+</html>

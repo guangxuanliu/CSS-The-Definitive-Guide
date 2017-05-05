@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动规则二</title>
+    <style>
+        .parent {
+            width: 500px;
+            height: auto;
+            background-color: red;
+            padding: 50px;
+        }
+        .parent:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .child1 {
+            width: 200px;
+            height: 200px;
+            float: left;
+            background-color: green;
+            margin: 20px;
+        }
+        .child2 {
+            width: 200px;
+            height: 200px;
+            float: left;
+            background-color: blue;
+            margin: 20px;
+        }
+        .child3{
+            width: 200px;
+            height: 200px;
+            float: left;
+            background-color: purple;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<p>
+    浮动元素的左（或右）外边界必须是源文档中之前出现的左浮动（或右浮动）元素的右外边界（或左外边界）。除非后出现浮动元素的顶端在先出现浮动元素的底端下面。
+</p>
+<div class="parent">
+    <div class="child1"></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+</div>
+<p>
+    注：此处可以看到如果子元素浮动的话，其将从文档流中脱离，所以撑不起来父元素，此处的解决办法有四种。
+<ol>
+    <li>
+        在父元素上用<code>:after</code>伪类，清除浮动。
+        <pre>
+        .parent:after{
+            content:'';
+            display:block;
+            clear:both;
+        }
+    </pre>
+    </li>
+    <li>
+        再加一个空元素，把空元素清除浮动
+        <pre>
+            .child-n{
+                clear:both;
+            }
+        </pre>
+    </li>
+    <li>
+        父元素设置<code>overflow</code>属性为<code>auto</code>或者<code>hidden</code>都可以。这个应该是CSS的黑魔法，不知道原理。
+    </li>
+    <li>
+        设置父元素也浮动，这样所有的元素都浮动会引起更大的问题，所以此方法不推荐。
+    </li>
+</ol>
+</p>
+</body>
+</html>

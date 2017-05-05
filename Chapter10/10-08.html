@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动规则四</title>
+    <style>
+        div{
+            text-align: center;
+            color: white;
+        }
+        .parent{
+            background-color: red;
+        }
+        .parent:after{
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+        .child1{
+            background-color: green;
+            height: 50px;
+        }
+        .child2{
+            background-color: blue;
+            height: 50px;
+            float: left;
+        }
+        .child3{
+            background-color: purple;
+            height: 50px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<p>
+    一个浮动元素的顶端不能比其父元素的内顶端更高。如果一个浮动元素在两个合并外边距之间，放置这个浮动元素时就好像在两个元素之间有一个块级父元素。
+</p>
+<div class="parent">
+    <div class="child1">child1</div>
+    <div class="child2">child2</div>
+    <div class="child3">child3</div>
+</div>
+</body>
+</html>
