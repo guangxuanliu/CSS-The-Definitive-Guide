@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动元素</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            float: left;
+        }
+        .div1{
+            background-color: red;
+        }
+        .div2{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<h1>测试浮动元素的外边距不会合并（包括水平和垂直外边距）</h1>
+<div class="div1"></div>
+<div class="div2"></div>
+<p>
+    注：只要相邻元素中有一个元素浮动，则相邻元素的外边距就不会合并。
+</p>
+</body>
+</html>
