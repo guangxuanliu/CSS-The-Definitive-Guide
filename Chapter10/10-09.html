@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动规则五</title>
+    <style>
+        .parent{
+            width: 500px;
+            background-color: red;
+        }
+        .parent:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .child1{
+            width: 100px;
+            height: 100px;
+            float: left;
+            background-color: green;
+        }
+        .child2{
+            width: 200px;
+            height: 100px;
+            float: left;
+            background-color: blue;
+        }
+        .child3{
+            width: 100px;
+            height: 100px;
+            float: right;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div class="child1"></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+</div>
+<p>
+    注：浮动元素的顶端不能比之前所有浮动元素或块级元素的顶端更高。
+</p>
+</body>
+</html>
